@@ -1,8 +1,16 @@
-<% provide(:title, 'Home') %>
+<div class="center hero-unit">
+	<h1>
+		Welcome to the Xampl App
+	</h1>
 
-<body>
-	<h1>Xampl App</h1>
-	<p>This is the home page for the
-	<a href="http://railstutorial.org/">Ruby on Rails Tutorial</a> Xampl App
-	</p>
-</body>
+	<h2>
+		This is the home page for the
+		<a href="http://railstutorial.org/">Ruby on Rails Tut</a>
+		sample application.
+	</h2>
+
+	<%= link_to 'sign up now!', signup_path, class: 'btn btn-large btn-primary' %>
+</div>
+
+<%= link_to image_tag('rails.png', alt: 'rails logo'), 'http://rubyonrails.org/' %>
+
